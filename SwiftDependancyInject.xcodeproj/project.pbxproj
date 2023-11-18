@@ -13,6 +13,7 @@
 		76EF1D892B085A82007675C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EF1D872B085A82007675C1 /* Main.storyboard */; };
 		76EF1D8B2B085A84007675C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EF1D8A2B085A84007675C1 /* Assets.xcassets */; };
 		76EF1D8E2B085A84007675C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EF1D8C2B085A84007675C1 /* LaunchScreen.storyboard */; };
+		76EF1D972B0863A3007675C1 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 76EF1D962B0863A3007675C1 /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76EF1D972B0863A3007675C1 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SwiftDependancyInject;
+			packageProductDependencies = (
+				76EF1D962B0863A3007675C1 /* Swinject */,
+			);
 			productName = SwiftDependancyInject;
 			productReference = 76EF1D7E2B085A82007675C1 /* SwiftDependancyInject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 76EF1D752B085A82007675C1;
+			packageReferences = (
+				76EF1D952B0863A3007675C1 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 76EF1D7F2B085A82007675C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		76EF1D952B0863A3007675C1 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76EF1D962B0863A3007675C1 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76EF1D952B0863A3007675C1 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76EF1D762B085A82007675C1 /* Project object */;
 }
